@@ -96,7 +96,6 @@ a[href="#design"] {
 
 @keyframes enlargeMe {
   
-	0% {
 	0% { 
 		transform: scale(1);
 	}
