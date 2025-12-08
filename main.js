@@ -52,3 +52,13 @@ moveMe.addEventListener("click", movingOn)
 function movingOn() {
   moveMe.classList.toggle("translate-me")
 }
+
+/*MARK: Development */
+const panicMe = document.querySelector('a[href="#development"]')
+
+panicMe.addEventListener("dblclick", panicking)
+
+function panicking() {
+  console.log("panicking")
+  panicMe.classList.toggle("shake-me")
+}

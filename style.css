@@ -133,3 +133,24 @@ a[href="#design"] {
     translate: 0;
   }
 }
+
+/* MARK: Development */
+.shake-me  {
+  animation-name: shakeMe;
+	animation-duration: .05s;
+	animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+	animation-direction: alternate;
+}
+
+@keyframes shakeMe {
+  
+	0% {
+		transform: translateX(0);
+    rotate: 30deg;
+	}
+
+  100% {
+    transform: translateX(-.4em);
+  }
+}
