@@ -27,9 +27,18 @@ designLink.addEventListener('animationend', jumpHandler)
 
 // Stap 1: querySelector
 // let scaleLink = document.querySelector...
+const largeMeButton = document.querySelector('a[href="#frontend"]')
 
 // Stap 2: addEventListener
 // scaleLink.addEventListener...
+largeMeButton.addEventListener("click", toggleSize)
 
 // Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
 // scaleLink.classList.toggle...
+
+function toggleSize() {
+  largeMeButton.classList.toggle("enlarge-me")
+  
+}
+
+largeMeButton.addEventListener("animationend", toggleSize)
