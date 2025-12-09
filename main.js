@@ -59,6 +59,16 @@ const panicMe = document.querySelector('a[href="#development"]')
 panicMe.addEventListener("dblclick", panicking)
 
 function panicking() {
-  console.log("panicking")
+  // console.log("panicking")
   panicMe.classList.toggle("shake-me")
+}
+
+/*MARK: Sprint 5 */
+const colorMe = document.querySelector('a[href="#sprint-5"]')
+
+colorMe.addEventListener("focus", coloring)
+
+function coloring() {
+  // console.log("coloring")
+  colorMe.classList.add("color-me")
 }
