@@ -72,3 +72,12 @@ function coloring() {
   // console.log("coloring")
   colorMe.classList.add("color-me")
 }
+
+/*MARK: Fix */
+const mouseMe = document.querySelector('a[href="#fix"]')
+
+mouseMe.addEventListener("mouseover", moveMouse)
+
+function moveMouse(){
+  mouseMe.textContent = "Fixed"
+}
