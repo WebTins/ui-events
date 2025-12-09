@@ -141,16 +141,17 @@ a[href="#design"] {
 	animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 	animation-direction: alternate;
+  transform-origin: center;
 }
 
 @keyframes shakeMe {
   
 	0% {
 		transform: translateX(0);
-    rotate: 30deg;
 	}
 
   100% {
     transform: translateX(-.4em);
+    rotate: 5deg;
   }
 }
