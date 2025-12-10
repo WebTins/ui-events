@@ -178,3 +178,31 @@ li a.color-me {
 	animation: regenboog 2s infinite linear paused;
   animation-play-state: running;
 }
+
+/* MARK: & */
+.translate-me  {
+  animation-name: translateMe;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+  animation-timing-function: ease-out-in;
+	animation-direction: alternate;
+
+}
+
+/* MARK: The */
+
+.the-out  {
+  animation-name: rotateMe;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+	animation-direction: alternate;
+  transform-origin: center;
+}
+
+@keyframes rotateMe {
+
+  100% {
+    rotate: 1turn;
+  }
+}

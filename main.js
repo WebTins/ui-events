@@ -81,3 +81,12 @@ mouseMe.addEventListener("mouseover", moveMouse)
 function moveMouse(){
   mouseMe.textContent = "Fixed"
 }
+
+/*MARK: The */
+const rotating = document.querySelector('a[href="#the"]')
+
+rotating.addEventListener("mouseout", rotates)
+
+function rotates(){
+  rotating.classList.toggle("the-out")
+}
