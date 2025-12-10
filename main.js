@@ -90,3 +90,18 @@ rotating.addEventListener("mouseout", rotates)
 function rotates(){
   rotating.classList.toggle("the-out")
 }
+
+/*MARK: Flow */
+const flipping = document.querySelector('a[href="#flow"]')
+
+flipping.addEventListener("mousedown", mouseHold)
+flipping.addEventListener("mouseup", mouseRelease)
+
+function mouseHold(){
+  flipping.classList.add("flip-me")
+  console.log("mouseHold")
+}
+
+function mouseRelease(){
+  flipping.classList.remove("flip-me")
+}
