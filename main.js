@@ -105,3 +105,16 @@ function mouseHold(){
 function mouseRelease(){
   flipping.classList.remove("flip-me")
 }
+
+/*MARK: User */
+const changedColor = document.querySelector('a[href="#user"]');
+
+document.addEventListener("keyup", function (event) {
+  let letter = event.key.toLowerCase();
+
+  changedColor.classList.remove("change-color");
+
+  if (letter === "l") {
+    changedColor.classList.add("change-color");
+  }
+});

@@ -216,3 +216,9 @@ li a.color-me {
   transform: scaleX(-1);
   transition: 1s;
 }
+
+/* MARL: User */
+.change-color {
+  --kleurtje: deeppink;
+  background-color: var(--kleurtje);
+}
