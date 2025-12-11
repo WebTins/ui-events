@@ -217,8 +217,19 @@ li a.color-me {
   transition: 1s;
 }
 
-/* MARL: User */
+/* MARK: User */
 .change-color {
   --kleurtje: deeppink;
   background-color: var(--kleurtje);
+}
+
+/* MARK: Interface */
+a[href="#interface"] {
+  transition:
+    scale 2s ease,
+    filter 3s ease;
+}
+
+.blow {
+  scale: 2;
 }
