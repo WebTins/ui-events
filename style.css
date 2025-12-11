@@ -233,3 +233,12 @@ a[href="#interface"] {
 .blow {
   scale: 2;
 }
+
+/* MARK: Events */
+a[href="#events"] {
+  transition: font-size 2s ease;
+}
+
+.wheel-font {
+  font-size: 2em;
+}

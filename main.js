@@ -168,3 +168,24 @@ document.addEventListener("keyup", function(event){
     console.log("test1")
   }
 })
+
+/*MARK: Events */
+
+// Stap 1: querySelector
+const scrolled = document.querySelector('a[href="#events"]')
+// Stap 2: addEventListener
+document.addEventListener("wheel", wheelUp)
+document.addEventListener("wheel", wheelDown)
+
+// Stap 3: (Callback functie met) classList (.add())
+function wheelUp() {
+  if (event.deltaY < 0) {
+    scrolled.classList.add('wheel-font')
+  }
+}
+// Stap 3: (Callback functie met) classList (.remove())
+function wheelDown() {
+  if (event.deltaY > 0) {
+    scrolled.classList.remove('wheel-font')
+  }
+}
