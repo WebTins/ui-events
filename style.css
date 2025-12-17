@@ -242,3 +242,15 @@ a[href="#events"] {
 .wheel-font {
   font-size: 2em;
 }
+
+/* MARK: Integration */
+.gradient {
+  --x: 50%;
+  --y: 50%;
+
+  background: radial-gradient(
+    circle at var(--x, 50%) var(--y, 50%),
+    purple,
+    #1a1a1a 60%
+  );
+}

@@ -189,3 +189,25 @@ function wheelDown() {
     scrolled.classList.remove('wheel-font')
   }
 }
+
+/*MARK: Integration */
+const buttonGradient = document.querySelector('a[href="#interaction"]')
+
+buttonGradient.addEventListener("mousemove", (e) => {
+  console.log("hallo")
+  const x = e.offsetX;
+  const y = e.offsetY;
+  
+  buttonGradient.classList.add('gradient')
+
+  buttonGradient.style.setProperty('--x', `${x}px`);
+  buttonGradient.style.setProperty('--y', `${y}px`);
+})
+
+buttonGradient.addEventListener("mouseout", () => {
+
+   buttonGradient.classList.remove('gradient')
+
+  buttonGradient.style.setProperty('--x', '50%');
+  buttonGradient.style.setProperty('--y', '50%');
+})
